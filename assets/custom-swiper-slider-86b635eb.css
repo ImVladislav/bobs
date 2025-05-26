@@ -1,0 +1,39 @@
+.swiper-container {
+  width: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 16px;
+}
+
+.swiper-slide.swiper-slide-active {
+  z-index: 20;
+  @media(min-width: 640px) {
+    transform: scale(1.2);
+  }
+}
+
+.swiper-slide.level-2 {
+  transform: scale(1);
+  z-index: 10;
+}
+
+.swiper-slide.level-3 {
+  transform: scale(0.8);
+  z-index: 5;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+  filter: brightness(50%);
+}
+
+.swiper-slide:not(.visible-slide) {
+  visibility: hidden;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+  content: "";
+}

@@ -1,0 +1,23 @@
+@keyframes infiniteScrollLeft {
+	from { transform: translateX(0) }
+	to { transform: translateX(calc(0px - 50%)); }
+}
+
+@keyframes infiniteScrollRight {
+	from { transform: translateX(calc(0px - 50%)); }
+	to { transform: translateX(0); }
+}
+  
+.animate-infinite-scroll-left {
+	animation-name: infiniteScrollLeft;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.animate-infinite-scroll-right {
+	animation-name: infiniteScrollRight;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}

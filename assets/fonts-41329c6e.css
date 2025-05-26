@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'BackToSchool';
+	src: url("fonts/BackToSchool-1e1c70a9.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FluffySlacksBTNRegular';
+	src: url("fonts/FluffySlacksBTNRegular-1a06bb4c.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+  
+.font-back-to-school {
+	font-family: 'BackToSchool', sans-serif;
+}
+
+.font-fluffy-slacks {
+  font-family: 'FluffySlacksBTNRegular', sans-serif;
+}
